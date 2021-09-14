@@ -8,7 +8,7 @@ Z2xhc3MgYnVsbGV0O3NoaWVsZC51bmZvbGRpbmc7c2hpZWxkLnVuaXZlcnNhbDt0b3dlci5zdXBlci4x
 
 Disables: `Light(and/or)Dark, era hp/dmg, Earth, Water, Universal, Fire`
 
-
+Tip: Requires `Daigoparry(PS)` and `Energy Flow(Desert-C2)`
 
 
 [Scripts Required]
