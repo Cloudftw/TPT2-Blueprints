@@ -1,0 +1,10 @@
+:global string region
+:global string disables
+
+wakeup()
+game.newround()
+
+gotoif(99, disables != "")
+region = "beach"
+disables = ternary.string(region == "forest", "earth neutral fire nature", ternary.string(region == "desert", "light earth neutral fire", ternary.string(region == "winter", "light dark earth water uni neutral", ternary.string(region == "underground", "dark earth uni neutral", ternary.string(region == "Volcano", "light dark earth uni neutral", ternary.string(region == "high mountain", "light earth water uni neutral", ternary.string(region == "jungle", "light dark earth water neutral", ternary.string(region == "metallic ruins", "light earth uni neutral", ternary.string(region == "beach", "light dark earth water neutral", ternary.string(region == "ocean", "light water uni neutral", ternary.string(region == "neutral", "uni neutral", ternary.string(region == "dark realm", "dark earth water uni", ternary.string(region == "heaven", "light uni neutral", ternary.string(region == "universe", "light dark earth uni neutral", ternary.string(region == "chaos", "light dark earth uni neutral", "dead")))))))))))))))
+disablenum = 
