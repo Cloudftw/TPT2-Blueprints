@@ -1,10 +1,11 @@
 :global string region
+:global int regionnum
 :global string disables
 
 wakeup()
 game.newround()
 
 gotoif(99, disables != "")
-region = "beach"
+region = ternary.string(regionnum == 1, "forest", ternary.string(regionnum == 2, "desert", ternary.string(regionnum == 3, "winter", ternary.string(regionnum == 4, "underground", ternary.string(regionnum == 5, "volcano", ternary.string(regionnum == 6, "high mountain", ternary.string(regionnum == 7, "jungle", ternary.string(regionnum == 8, "metallic ruins", ternary.string(regionnum == 9, "beach", ternary.string(regionnum == 10, "ocean", ternary.string(regionnum == 11, "neutral", ternary.string(regionnum == 12, "dark realm", ternary.string(regionnum == 13, "heaven", ternary.string(regionnum == 14, "universe", ternary.string(regionnum == 15, "chaos", "" )))))))))))))))
 disables = ternary.string(region == "forest", "earth neutral fire nature", ternary.string(region == "desert", "light earth neutral fire", ternary.string(region == "winter", "light dark earth water uni neutral", ternary.string(region == "underground", "dark earth uni neutral", ternary.string(region == "Volcano", "light dark earth uni neutral", ternary.string(region == "high mountain", "light earth water uni neutral", ternary.string(region == "jungle", "light dark earth water neutral", ternary.string(region == "metallic ruins", "light earth uni neutral", ternary.string(region == "beach", "light dark earth water neutral", ternary.string(region == "ocean", "light water uni neutral", ternary.string(region == "neutral", "uni neutral", ternary.string(region == "dark realm", "dark earth water uni", ternary.string(region == "heaven", "light uni neutral", ternary.string(region == "universe", "light dark earth uni neutral", ternary.string(region == "chaos", "light dark earth uni neutral", "dead")))))))))))))))
-disablenum = 
+goto(2)
