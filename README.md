@@ -12,7 +12,7 @@ Z2xhc3MgYnVsbGV0O3NoaWVsZC51bml2ZXJzYWw7c2hpZWxkLnVuZm9sZGluZzt0b3dlci5zdXBlci4x
 
 
 [Scripts Required]
--These scripts are incompatible with turbo exec
+-These scripts do not use turbo exec
 -Necronomicon(Boss 4 Artifact) is required
 
 Auto uses regular abilities
